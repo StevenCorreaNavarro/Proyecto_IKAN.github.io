@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    /* background:rgb(19, 7, 30);*/
+   /* background: url(/img/calle-coche-luces-frenado.jpg);*/
+    background-attachment: fixed;
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* =================================   barra de menu ================================*/
+.lineanegra {
+    background: linear-gradient(black, rgb(0, 59, 82));
+    width: 100%;
+    height: 0px;
+}
+
+header {
+
+
+    z-index: 1;
+    /* menu en primera plana*/
+    position: fixed;
+    /*menu en posicion fija*/
+    width: 100%;
+    /*  en esta parte pone la barra de menu primera plana en header*/
+}
+
+header .container .nav {
+    margin-top: 22px;
+    height: 45px;
+    justify-content: space-between;
+    width: 100%;
+    background: rgba(185, 185, 185, 0.682);
+
+}
+
+
+
+
+.nav a {
+    margin-left: 20px;
+    /*espacio entre cada hipervinculo*/
+    margin-right: 20px;
+    /*espacio entre cada hipervinculo*/
+}
+
+
+.nav-list2 li a {
+    margin-right: 40px;
+    /*esta parte para correr "iniciar seesion" a la izquierda*/
+
+}
+
+.nav {
+    /*margin-top:  5px;             margen del menu
+    margin-bottom: 3%;
+    margin-right: 20%;*/
+    height: 0%;
+    padding: 0%;
+    display: flex;
+
+    /*align-items:start;*/
+    background-color: rgba(15, 3, 66, 0.164);
+    /*backdrop-filter: blur(70px)  ;*/
+}
+
+input {
+    height: 25px;
+    width: 250px;
+    border-spacing: 80px;
+    border-color: rgba(161, 161, 161, 0.945);
+    border-radius: 40px;
+}
+
+.nav-link {
+    padding: 0px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+header .container .nav ul li {
+    font-size: 16px;
+    margin: 0%;
+    padding: 0px;
+}
+
+.nav-list {
+    display: flex;
+    text-decoration: none;
+
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+    align-items: center;
+    /*centrar la lista vertical del menu*/
+
+}
+
+.nav-list2 {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    text-align: initial;
+    margin: 0%;
+    padding: 0%
+}
+
+
+
+
+li {
+    padding: 0%;
+    text-decoration: none;
+}
+
+a {
+    color: #0c243a;
+    text-decoration: none;
+
+
+
+}
+ul{
+    padding: 0%;
+    margin: 0%;
+    padding-left: 20px;
+    padding-top: 0px;
+
+}
+li a:hover {
+    color: rgb(255, 255, 255);
+    /*background-color: rgba(15, 3, 66, 0.055);*/
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    /*quitar punto de la lista*/
+}
+
+
+.logot ul li a img {
+    
+    display: flex;
+    z-index: 2;
+    position: fixed;
+    height: 83px;
+    padding: 0%;
+    margin: 0%;
+
+}
+.fo form {
+      
+    margin-left: 50px;
+}
+
+
+
+
+/*             aqui dar dimencion al cuerpo*/
+.cuerpo{
+    height: 50vh;
+
+}
+
+.footer-content{
+
+    margin: 0%;
+    padding: 0%;
+}
+
+footer {
+    
+    position: relative;
+
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    
+    background-color: rgb(0, 0, 0);
+    backdrop-filter: blur(70px);
+    color: #fff;
+    text-align: center;
+    bottom: 0%;
+}
+
+.social-media{
+    display: flex;
+    
+    align-items: center;
+    
+    
+    
+}
+
+
+.footer-content h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    margin-bottom: 0;
+}
+
+.logft{
+
+    margin: none;
+}
+
+.footer-content-about p {
+    line-height: 2;
+}
+
+.footer-div img{
+    margin: 10%;
+    
+
+    height: 200px;
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 0;
+    width: 20vw;
+    background-color: #000000;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ffffff;
+    /*padding: 0rem 1rem;     /* espacios entre iconos de redes sociales */
+    /*padding: 0px 10px 0px 10px ;*/
+    
+}
+
+.social-icons i:hover, .social-icons i:focus {
+    color: rgb(202, 186, 0);
+}
+
+.social-icons{
+    margin: 2%;
+    align-items: flex-end;
+    height: 45VH;
+    
+
+}
+
+.social-icons li{
+    padding: 5%;
+    
+}
+
+.ulti{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    font-size: 15px;
+}
+
+
+
+
+
+@media screen and (min-width: 900px) {
+
+    section {
+        padding: 7.9rem;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .nav-list {
+        position: initial;
+        width: initial;
+        height: initial;
+        background-color: transparent;
+        padding: 0;
+        justify-content: initial;
+        flex-direction: row;
+        transform: initial;
+        transition: initial;
+    }
+    
+
+    .nav-item {
+        margin: 0 2.4rem;
+    }
+
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .active {
+        position: relative;
+    }
+    .active::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #fff;
+        left: 0;
+        bottom: -3px;
+    }
+
+    .h2-sub {
+        font-size: 3rem;
+    }
+
+    .fil {
+        font-size: 3rem;
+    }
+    .head {
+        font-size: 4.7rem;
+        letter-spacing: .8rem;
+    }
+
+    .res-info {
+        display: flex;
+        align-items: center;
+    }
+
+    .res-info > div {
+        flex: 1;
+    }
+
+    .pad-rig {
+        padding-right: 7rem;
+    }
+
+    .footer-content {
+        max-width: 77.5rem;
+        margin: auto;
+    }
+
+    .footer-content-about {
+        max-width: 51.3rem;
+        margin:  0 auto 5.4rem;
+    }
+    
+
+    /* en esata parte se correa a un lado.footer-div{
+        display: flex;
+        justify-content: space-between;
+    }/*
+
+    .social-media, .news-form {    /*aqui se coloca a un lado o al centro si se elimina
+        width: 100%; 
+        max-width: 27.3rem;
+        margin: 0 1rem;
+    }
+    
+
+   .news-btn {
+       margin-left: 7.5rem;
+   }*/
+    
+}
