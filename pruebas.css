@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 203px;
+    grid-gap: 4px;
+    padding: 100px 0;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para la opacidad del overlay */
+    opacity: 0; /* El overlay estará oculto inicialmente */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.box:hover .overlay {
+    opacity: 1; /* Mostrar el overlay cuando se pasa el mouse sobre el contenedor */
+}
+.box:nth-child(1){
+    grid-column-start: span 1;
+}
+.box:nth-child(3){
+    grid-column-start: span 1;
+}
+.box:nth-child(4){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.box:nth-child(6){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+@media(max-width:991px){
+    .contenedor{
+        padding: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .box:nth-child(1){
+        grid-column-start: span 1;
+    }
+    .box:nth-child(4){
+        grid-column-start: span 2;
+    }
+}

@@ -23,6 +23,8 @@ body {
     height: 0px;
 }
 
+
+
 header {
 
 
@@ -32,14 +34,16 @@ header {
     /*menu en posicion fija*/
     width: 100%;
     /*  en esta parte pone la barra de menu primera plana en header*/
+    
 }
 
-header .container .nav {
-    margin-top: 22px;
+header .contenedor .nav {
+    margin-top: 15px;
     height: 45px;
     justify-content: space-between;
-    width: 100%;
+    width: 1905px;
     background: rgba(185, 185, 185, 0.682);
+    
 
 }
 
@@ -81,22 +85,25 @@ input {
     border-radius: 40px;
 }
 
-.nav-link {
+.nav-lin {
     padding: 0px;
     text-decoration: none;
     border-radius: 10px;
+    color: #000000;
 }
 
-header .container .nav ul li {
-    font-size: 16px;
+
+header .contenedor .nav ul li {
+    font-size: 20px;
     margin: 0%;
     padding: 0px;
+    
 }
 
 .nav-list {
     display: flex;
     text-decoration: none;
-
+    color: #000000;
     list-style: none;
     margin: 0%;
     padding: 0%;
@@ -124,7 +131,7 @@ li {
 }
 
 a {
-    color: #0c243a;
+    color: #000000;
     text-decoration: none;
 
 
@@ -150,6 +157,24 @@ ul li {
     /*quitar punto de la lista*/
 }
 
+@media (max-width: 768px) {
+    .logot, .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+}
+
+
 
 .logot ul li a img {
 
@@ -158,7 +183,7 @@ ul li {
     position: fixed;
     height: 83px;
     padding: 0%;
-    margin: 0%;
+    margin: -1%;
 
 }
 
@@ -311,6 +336,7 @@ footer {
 
     .nav-link {
         font-size: 1.3rem;
+        
     }
 
     .active {
@@ -445,7 +471,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 32rem;
+    height: 60rem;
 }
 
 
