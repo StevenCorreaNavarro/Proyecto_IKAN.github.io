@@ -1,67 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
-.contenedor{
-    max-width: 1200px;
+
+.contenedor {
+    max-width: 1860px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 203px;
-    grid-gap: 4px;
+    grid-template-rows: 260px;
+    grid-gap: 1px;
     padding: 100px 0;
 }
-.box img{
+
+.box img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+
+
+.box {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Ajusta el valor alfa para la opacidad del overlay */
-    opacity: 0; /* El overlay estará oculto inicialmente */
-    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+    background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad del overlay */
+    opacity: 0; /* Inicialmente oculto */
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
+    transition: opacity 0.3s; /* Efecto de transición suave */
+}
+
+.overlay p {
+    color: #fff; /* Color del texto */
+    font-size: 16px; /* Tamaño del texto */
+    text-align: center; /* Alineación del texto */
 }
 
 .box:hover .overlay {
-    opacity: 1; /* Mostrar el overlay cuando se pasa el mouse sobre el contenedor */
+    opacity: 1; /* Mostrar overlay al pasar el mouse sobre la imagen */
 }
-.box:nth-child(1){
+
+.box:nth-child(1) {
     grid-column-start: span 1;
 }
-.box:nth-child(3){
+
+.box:nth-child(3) {
     grid-column-start: span 1;
 }
-.box:nth-child(4){
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-.box:nth-child(6){
+
+.box:nth-child(4) {
     grid-column-start: span 2;
     grid-row-start: span 2;
 }
 
-@media(max-width:991px){
-    .contenedor{
+.box:nth-child(6) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+@media(max-width:991px) {
+    .contenedor {
         padding: 10px;
         grid-template-columns: repeat(1, 1fr);
     }
-    .box:nth-child(1){
+
+    .box:nth-child(1) {
         grid-column-start: span 1;
     }
-    .box:nth-child(4){
+
+    .box:nth-child(4) {
         grid-column-start: span 2;
     }
 }
