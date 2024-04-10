@@ -461,6 +461,10 @@ body {
     list-style: none;
 
 }
+.carousel-control-prev{
+    background-color: #ff0000;
+    color: #5a23c8;
+}
 
 .carousel-caption {
     bottom: -30rem;
