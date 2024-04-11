@@ -115,7 +115,7 @@ header nav ul li a.active {
     border-radius: 30px;
     padding: 10px;
     border: 2px solid #ccc;
-    width: 147px;
+    width: 152px;
     outline: none;
     transition: border-color 0.3s;
     margin-left: 33px;
@@ -309,7 +309,7 @@ img {
 
 }
 
-.regis{
+.regis {
     background-color: #000;
     color: #ffffff;
     text-align: center;
@@ -351,49 +351,57 @@ img {
 
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
 /*:::::Pie de Pagina*/
-.pie-pagina{
+.pie-pagina {
     width: 100%;
     background-color: #000000;
-    
+
 }
+
 .pie-pagina .grupo-1 {
     width: 100%;
     max-width: 1471px;
     margin: auto;
-      margin-top: auto;
+    margin-top: auto;
     display: flex;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 88px;
     padding: 45px 0px;
     margin-top: -100px;
-  }
-.pie-pagina .grupo-1 .box figure{
+}
+
+.pie-pagina .grupo-1 .box figure {
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.pie-pagina .grupo-1 .box figure img{
+
+.pie-pagina .grupo-1 .box figure img {
     width: 250px;
 }
-.pie-pagina .grupo-1 .box h2{
+
+.pie-pagina .grupo-1 .box h2 {
     color: #fff;
     margin-bottom: 25px;
     font-size: 20px;
 }
-.pie-pagina .grupo-1 .box p{
+
+.pie-pagina .grupo-1 .box p {
     color: #efefef;
     margin-bottom: 10px;
 }
-.pie-pagina .grupo-1 .red-social a{
+
+.pie-pagina .grupo-1 .red-social a {
     display: inline-block;
     text-decoration: none;
     width: 45px;
@@ -405,114 +413,54 @@ img {
     text-align: center;
     transition: all 300ms ease;
 }
-.pie-pagina .grupo-1 .red-social a:hover{
+
+.pie-pagina .grupo-1 .red-social a:hover {
     color: aqua;
 }
-.pie-pagina .grupo-2{
+
+.pie-pagina .grupo-2 {
     background-color: #0a1a2a;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
 }
-.pie-pagina .grupo-2 small{
+
+.pie-pagina .grupo-2 small {
     font-size: 15px;
 }
-@media screen and (max-width:800px){
-    .pie-pagina .grupo-1{
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
         width: 90%;
         grid-template-columns: repeat(1, 1fr);
-        grid-gap:30px;
+        grid-gap: 30px;
         padding: 35px 0px;
     }
 }
-/* .hamburger {
+
+.hamburger {
     cursor: pointer;
     display: none;
 }
 
 .hamburger div {
     width: 30px;
-    height: 3px;
+    height: 4px;
     margin: 5px 0;
     background: #000;
 }
-.submenus{
-    position: absolute;
-    top: 85%;
-    right: 1%;
-    width: 320px;
-    max-height: 0px; 
-    overflow: hidden;
-    transition: max-height 0.5s;
 
-}
-.submenus.open-menu{
-    max-height: 714px;
-}
-.submenu{
-    background: #fff;
-    padding: 20px;
-    margin: 10px;
-
-}
-.info{
-    display: flex;
-    align-items: center;
-}
-.info h3{
-    font-weight: 500;
-}
-.info img{
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-.submenu hr{
-    border: 0;
-    height: 1px;
-    width: 100%;
-    background: #ccc;
-    margin: 15px 0 10px;
-}
-.submenu-links{
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #525252;
-    margin:  0;
-}
-.submenu-links p{
-    width: 100%;
-    margin-left: 10px;
-    font-size: 15px;
-}
-.submenu-links img{
-    width: 40px;
-    background: #e5e5e5;
-    border-radius: 50%;
-    padding: 8px;
-    padding-right: px;
-}
-.submenu-links span{
-    font-size: 22px;
-    transition: transform 0.5s;
-}
-.submenu-links:hover span{
-transform: translateX(5px);
-}
-.submenu-links:hover p{
-font-weight: 600;
-} */
 /* --------------------------------------------------- Resposive ---------------------- */
-/* @media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
     header {
-        padding: 0 20px;
+        padding: 0 0px;
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
     .hamburger {
         display: block;
+        margin-right: 10px;
     }
 
     header nav {
@@ -537,4 +485,4 @@ font-weight: 600;
     header nav ul li a {
         margin: 5px 0;
     }
-} */
+} 
