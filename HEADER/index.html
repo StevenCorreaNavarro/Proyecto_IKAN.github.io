@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>Ubicacion</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="logo">
+      <img src="/NEGRO.png" alt="">
+    </div>
+    <input type="checkbox" id="nav_check" hidden>
+    <nav>
+      <ul>
+        <li>
+          <a href="" class="active">Inicio</a>
+        </li>
+        <li>
+          <a href="" class="">Diseñar Outfit</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">Tiendas</a>
+        </li>
+        <li>
+          <a href="">Contactos</a>
+        </li>
+      </ul>
+    </nav>
+
+    <input type="search" class="search-box" placeholder="Buscar...">
+
+    <div class="user-icon">
+
+      <img src="/Captura de pantalla 2024-04-05 003851-modified.png" class="user-pic" onclick="toggleMenu()">
+      <div class="submenus" id="submenu">
+        <div class="submenu">
+          <div class="info">
+            <img src="/Captura de pantalla 2024-04-05 003851-modified.png" alt="">
+            <h2>Jack Steven Correa</h2>
+
+          </div>
+          <hr>
+          <a href="" class="submenu-links">
+            <img src="/usuario.png">
+            <p>Mi cuenta</p>
+            <span>></span>
+          </a>
+          <a href="" class="submenu-links">
+            <img src="/hogar.png">
+            <p>Inicio</p>
+            <span>></span>
+          </a>
+          <a href="" class="submenu-links">
+            <img src="/favorito (3).png">
+            <p>Favoritos</p>
+            <span>></span>
+          </a>
+          <a href="" class="submenu-links">
+            <img src="/tienda.png ">
+            <p>Tiendas Oficiales</p>
+            <span>></span>
+          </a>
+          <a href="" class="submenu-links">
+            <img src="/boton-web-de-ayuda.png">
+            <p>Ayuda/PQR</p>
+            <span>></span>
+          </a>
+          <a href="" class="submenu-links">
+            <img src="/cerrar-sesion.png">
+            <p>Salir</p>
+            <span>></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <label for="nav_check" class="hamburger">
+      <div></div>
+      <div></div>
+      <div></div>
+    </label>
+  </header>
+
+  <script>
+    let submenu = document.getElementById("submenu");
+    function toggleMenu() {
+      submenu.classList.toggle("open-menu");
+    }
+  </script>
+
+
+</body>
+
+</html>
