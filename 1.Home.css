@@ -315,8 +315,13 @@ img {
     text-align: center;
     height: 60px;
     justify-content: center;
-    padding: 20px;
+    padding: px;
     border-color: #fff;
+}
+.regis p{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
 }
 
 
@@ -363,8 +368,9 @@ img {
 .pie-pagina {
     width: 100%;
     background-color: #000000;
-
+    margin-top: 5px;
 }
+
 
 .pie-pagina .grupo-1 {
     width: 100%;
