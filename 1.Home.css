@@ -318,11 +318,25 @@ img {
     padding: px;
     border-color: #fff;
 }
-.regis p{
+.regis marquee{
     font-family: "Poppins", sans-serif;
     text-transform: uppercase;
     font-size: 40px;
+    
 }
+.regis marquee button{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+marquee button{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin: 10px;
+}
+
 
 
 
