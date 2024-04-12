@@ -128,6 +128,17 @@ header nav ul li a.active {
     /* Hace que el botón se haga más grande al 110% */
 }
 
+.tendencias{
+    background-color: #b2adad;
+    width: 100%;
+    height: 70px;
+}
+.tendencias p{
+    text-align: center;
+    padding: 5px;
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+}
 
 
 /* ---------------------AQUI TERMINA HEADER Y E INICIA GALERIA DE IMAGENES ----------------------------*/
@@ -146,7 +157,7 @@ header nav ul li a.active {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 260px;
     grid-gap: 1px;
-    padding: 100px 0;
+    padding: 0px 0;
 }
 
 .box img {
@@ -317,6 +328,7 @@ img {
     justify-content: center;
     padding: px;
     border-color: #fff;
+    margin-top: -100px;
 }
 .regis marquee{
     font-family: "Poppins", sans-serif;
@@ -330,9 +342,13 @@ img {
     font-size: 15px;
     
 }
-marquee button{
-    justify-content: center;
-    text-align: center;
+.regis button {
+    padding: 0px 20px; /* Espacio interno del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    background-color: rgb(250, 250, 251); /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    border: none; /* Eliminar borde del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
     margin-top: 10px;
     margin: 10px;
 }
@@ -439,10 +455,10 @@ marquee button{
 }
 
 .pie-pagina .grupo-2 {
-    background-color: #0a1a2a;
+    background-color: #ffffff;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
+    color: #000000;
 }
 
 .pie-pagina .grupo-2 small {
