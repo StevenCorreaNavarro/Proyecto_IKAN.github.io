@@ -37,3 +37,41 @@ loginBtn.addEventListener("click", (e)=>{
     formContainer.classList.remove("active")
 });
 
+
+
+
+
+// Obtener el botón de inicio de sesión por su ID
+const iniciarSesionBtn = document.getElementById("iniciar-sesion");
+
+// Agregar un event listener para escuchar el clic en el botón
+iniciarSesionBtn.addEventListener("click", function() {
+    // Redirigir al usuario a la página deseada
+    window.location.href = "2.Ikan_ocasion.html";
+});
+
+
+
+
+
+
+
+
+// // Obtener el botón de inicio de sesión por su ID
+// const iniciarSesionBtn = document.getElementById("iniciar-sesion");
+// // Obtener los campos de correo electrónico y contraseña por sus ID
+// const emailInput = document.getElementById("email");
+// const passwordInput = document.getElementById("password");
+
+// // Agregar un event listener para escuchar el clic en el botón
+// iniciarSesionBtn.addEventListener("click", function() {
+//     // Verificar si los campos de correo electrónico y contraseña están vacíos
+//     if (emailInput.value === '' || passwordInput.value === '') {
+//         alert("Por favor, complete todos los campos antes de iniciar sesión.");
+//     } else {
+//         // Redirigir al usuario a la página deseada si los campos están completos
+//         window.location.href = "2.Ikan_ocasion.html"; // Ruta relativa
+
+//         }
+// });
+
