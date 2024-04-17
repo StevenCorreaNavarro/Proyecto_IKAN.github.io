@@ -13,49 +13,95 @@
 <body>
 
     <header>
-        <div class="logot">
-            <ul>
-                <li class=><a href="#"><img src="/img/logo I KAN negro.png" alt=""></a></li>
-            </ul>
+
+        <div class="logo">
+          <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
         </div>
-
-
-        <div class="container">
-            <nav class="nav">
-                <div class="">
-                    <ul>
-                        <li class=><a href="#"><img src="" alt=""></a></li>
-                    </ul>
-                </div>
-                <ul class="nav-list">
-
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/Ikan_ocasion.html" class="nav-link ">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link ">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contacto.html" class="nav-link ">Contacto</a>
-                    </li>
-                    <li class="fo">
-                        <form action="">
-                            <label type="text" for=""></label>
-                            <input type="text" placeholder="   Buscar">
-                        </form>
-                    </li>
-                </ul>
-                <ul class="nav-list2">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Iniciar Sesion</a>
-                    </li>
-                </ul>
-            </nav>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+          <ul>
+            <li>
+              <a href="" class="active">Inicio</a>
+            </li>
+            <li>
+              <a href="" class="">Diseñar Outfit</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Tiendas</a>
+            </li>
+            <li>
+              <a href="">Contactos</a>
+            </li>
+          </ul>
+    
+    
+          
+          <input type="search" class="search-box" placeholder="Buscar...">            
+        </nav>
+    
+        
+    
+        <div class="user-icon">
+    
+          <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
+          <div class="submenus" id="submenu">
+            <div class="submenu">
+              <div class="info">
+                <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
+                <h2>Jack Steven Correa</h2>
+    
+              </div>
+              <hr>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
+                <p>Mi cuenta</p>
+                <span>></span>
+              </a>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
+                <p>Inicio</p>
+                <span>></span>
+              </a>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
+                <p>Favoritos</p>
+                <span>></span>
+              </a>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
+                <p>Tiendas Oficiales</p>
+                <span>></span>
+              </a>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
+                <p>Ayuda/PQR</p>
+                <span>></span>
+              </a>
+              <a href="" class="submenu-links">
+                <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
+                <p>Salir</p>
+                <span>></span>
+              </a>
+            </div>
+          </div>
         </div>
-    </header>
+    
+        <label for="nav_check" class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+      </header>
+    
+      <script>
+        let submenu = document.getElementById("submenu");
+        function toggleMenu() {
+          submenu.classList.toggle("open-menu");
+        }
+      </script>
 
 
 

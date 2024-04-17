@@ -18,160 +18,237 @@ body {
 }
 
 /* =================================   barra de menu ================================*/
-.lineanegra {
-    background: linear-gradient(black, rgb(0, 59, 82));
-    width: 100%;
-    height: 0px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: dodgerblue;
+}
+h2{
+    font-size: 18px;
+}
+
+header.down {
+    top: -100px;
+    /* desplazar el header hacia arriba */
 }
 
 header {
-    z-index: 2   ;
-    /* menu en primera plana*/
-    position: fixed;
-    /*menu en posicion fija*/
-    width: 100%;
-    /*  en esta parte pone la barra de menu primera plana en header*/
-    box-shadow: 0 0 7px;
-}
-
-header .container .nav {
-    margin-top: 22px;
-    height: 45px;
-    justify-content: space-between;
-    width: 100%;
     background: linear-gradient(#d9d9d9d8, #c7c7c7d8);
-
-}
-
-
-
-
-.nav a {
-    margin-left: 20px;
-    /*espacio entre cada hipervinculo*/
-    margin-right: 20px;
-    /*espacio entre cada hipervinculo*/
-}
-
-
-.nav-list2 li a {
-    margin-right: 40px;
-    /*esta parte para correr "iniciar seesion" a la izquierda*/
-
-}
-
-.nav {
-    /*margin-top:  5px;             margen del menu
-    margin-bottom: 3%;
-    margin-right: 20%;*/
-    height: 0%;
-    padding: 0%;
+    width: 100%;
+    height: 45px;                                               /**/
     display: flex;
-
-    /*align-items:start;*/
-    background-color: rgba(15, 3, 66, 0.164);
-    /*backdrop-filter: blur(70px)  ;*/
-}
-
-input {
-    height: 25px;
-    width: 250px;
-    border-spacing: 80px;
-    border-color: rgba(161, 161, 161, 0.945);
-    border-radius: 40px;
-}
-
-.nav-link {
-    padding: 0px;
-    text-decoration: none;
-    border-radius: 10px;
-}
-
-header .container .nav ul li {
-    font-size: 16px;
-    margin: 0%;
-    padding: 0px;
-}
-
-.nav-list {
-    display: flex;
-    text-decoration: none;
-
-    list-style: none;
-    margin: 0%;
-    padding: 0%;
     align-items: center;
-    /*centrar la lista vertical del menu*/
-
-}
-
-.nav-list2 {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    justify-content: end;
-    text-align: initial;
-    margin: 0%;
-    padding: 0%
-}
-
-li {
-    padding: 0%;
-    text-decoration: none;
-}
-
-a {
-    color: #0c243a;
-    text-decoration: none;
-
-
-
-}
-
-ul {
-    padding: 0%;
-    margin: 0%;
-    padding-left: 20px;
-    padding-top: 0px;
-
-}
-
-li a:hover {
-    color: rgb(255, 255, 255);
-    /*background-color: rgba(15, 3, 66, 0.055);*/
-}
-
-ul li {
-    text-decoration: none;
-    list-style: none;
-    /*quitar punto de la lista*/
-}
-
-
-.logot ul li a img {
-    display: flex;
-    z-index: 2;
+    justify-content: space-between;
+    padding-right: 20px;                                         /**/
     position: fixed;
-    height: 83px;
-    padding: 0%;
-    margin: 0%;
+    /* fijar el header en la parte superior */
+    top: 25px;
+    /* colocar el header en la parte superior */
+    width: 100%;
+    /* ancho completo del header */
+    z-index: 1000;
+    /* asegurar que el header esté sobre otros elementos */
+    transition: top 0.3s;
+    /* agregar transición suave al desplazarse hacia abajo */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.474);                             /**/ 
 }
 
-.fo form {
+header .logo {
+    font-size: 30px;
+    text-transform: uppercase;
 
-    margin-left: 50px;
+
+}
+ul li a:hover {
+    color: #000000;                                       /**/
+    font-weight:400;                                       /**/
+}
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.caja_inicio_sesion {
+.logo img {
+    width: 120px;                                      /**/
+}
+
+.user-icon img {
+    width: 45px;
+    margin-top: 8px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box {
+    height: 35px;                                             /**/
     padding: 10px;
-    background-color: #0000009e;
-    color: white;
-    border-radius: 10px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    width: 250px;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-left: 89px;
 }
 
-.caja_inicio_sesion:hover {
-    background-color: rgb(0, 0, 0);
-    color: white;
+.search-box:focus {
+    border-color: dodgerblue;
+}
+
+.user-icon {
+    margin-left: 0px;
+    /* Mueve el logo de usuario al final de la parte derecha */
+}
+
+header nav ul {
+    display: flex;
+    
+    
+}
+
+header nav ul li a {
+    
+    display: inline-block;
+    color: #4a4a4a;
+    /* padding: 2px 0; */
+    margin: 0 10px;                                             /**/
+    border: 3px solid transparent;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover,
+
+header nav ul li a.active {
+    border-bottom-color: rgb(0, 0, 0);
+    
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    margin: 5px 0;
+    background: #000;
+}
+.submenus{
+    position: absolute;
+    top: 85%;
+    right: 1%;
+    width: 320px;
+    max-height: 0px; /*fff */
+    overflow: hidden;
+    transition: max-height 0.5s;
+
+}
+.submenus.open-menu{
+    max-height: 714px;
+}
+.submenu{
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info h3{
+    font-weight: 500;
+}
+.info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.submenu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: #ccc;
+    margin: 15px 0 10px;
+}
+.submenu-links{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #525252;
+    margin:  0;
+}
+.submenu-links p{
+    width: 100%;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.submenu-links img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    padding-right: px;
+}
+.submenu-links span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+.submenu-links:hover span{
+transform: translateX(5px);
+}
+.submenu-links:hover p{
+font-weight: 600;
+}
+/* --------------------------------------------------- Resposive ---------------------- */
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hamburger {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+
+    header #nav_check:checked~nav {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li a {
+        margin: 5px 0;
+    }
 }
 
 

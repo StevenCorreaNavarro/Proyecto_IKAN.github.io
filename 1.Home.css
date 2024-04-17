@@ -59,7 +59,7 @@ ul li a:hover {
 
 
 .logo {
-    
+    margin-left: 20px;
     display: flex;
     align-items: center;
 }
@@ -93,7 +93,7 @@ ul li a:hover {
 }
 
 .user-icon {
-    margin-left: auto;
+    margin-left: 0px;                                /**/
     /* Mueve el logo de usuario al final de la parte derecha */
 }
 
