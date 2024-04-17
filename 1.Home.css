@@ -764,7 +764,7 @@ a{
 
 .login_form{
     padding: 32px;                                       /**/
-    width: 500px;
+    width: 500px;                                         /*tamaño de la caja en hancho*/
     
 }
 .home.show .form_container{                           
@@ -775,7 +775,7 @@ a{
 .signup_form{
     display: none;
     padding: 32px;                                       /**/
-    width: 500px;
+    width: 500px;                                         /*tamaño de la caja en hancho*/
 
 } 
 .form .signup_form img{
