@@ -743,10 +743,10 @@ a{
 }
 .form_container{
     position: fixed;
-    max-width: 90%;        
+    max-width: 41%;        
     max-height: 90%;                                /**/
     /* width: 100%; */
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
     z-index: 101;
@@ -764,8 +764,8 @@ a{
 
 .login_form{
     padding: 32px;                                       /**/
-    width: 500px;                                         /*tamaño de la caja en hancho*/
-    
+    width: 1266px;                                     /*tamaño de la caja en hancho*/
+    height: 420px;
 }
 .home.show .form_container{                           
     opacity: 1;
@@ -775,7 +775,8 @@ a{
 .signup_form{
     display: none;
     padding: 32px;                                       /**/
-    width: 500px;                                         /*tamaño de la caja en hancho*/
+    width: 1266px;
+  height: 420px;                                        /*tamaño de la caja en hancho*/
 
 } 
 .form .signup_form img{
