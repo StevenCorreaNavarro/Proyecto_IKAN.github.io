@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/2.estilo_ocasion.css">
+    <link rel="stylesheet" href="/2.estilo_ocasion copy.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I KAN</title>
 </head>
@@ -14,93 +14,163 @@
     <header>
 
         <div class="logo">
-          <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
+            <img src="/img/IMG HOME/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
         </div>
         <input type="checkbox" id="nav_check" hidden>
         <nav>
-          <ul>
-            <li>
-              <a href="" class="active">Inicio</a>
-            </li>
-            <li>
-              <a href="" class="">Diseñar Outfit</a>
-            </li>
-            <li>
-              <a href="">Blog</a>
-            </li>
-            <li>
-              <a href="">Tiendas</a>
-            </li>
-            <li>
-              <a href="">Contactos</a>
-            </li>
-          </ul>
-    
-    
-          
-          <input type="search" class="search-box" placeholder="Buscar...">            
+            <ul>
+                <li>
+                    <a href="" class="active">Inicio</a>
+                </li>
+                <li>
+                    <a href="/2.Ikan_ocasion.html" class="">Diseñar Outfit</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="">Tiendas</a>
+                </li>
+                <li>
+                    <a href="">Contactos</a>
+                </li>
+            </ul>
         </nav>
-    
+
+        <input type="search" class="search-box" placeholder="Buscar...">
+
         
-    
-        <div class="user-icon">
-    
-          <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
-          <div class="submenus" id="submenu">
-            <div class="submenu">
-              <div class="info">
-                <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
-                <h2>Jack Steven Correa</h2>
-    
-              </div>
-              <hr>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
-                <p>Mi cuenta</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
-                <p>Inicio</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
-                <p>Favoritos</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
-                <p>Tiendas Oficiales</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
-                <p>Ayuda/PQR</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
-                <p>Salir</p>
-                <span>></span>
-              </a>
-            </div>
-          </div>
+
+        <div class="iniciarr">
+            <button class="button" id="form-open">INICIAR SESION</button>
+            <!-- <a href="/PRUEBAS/Login-y-registro-con-html-css-js-main/Login-y-registro-con-html-css-js-main/index.html"><button>INICIAR SESION</button></a> -->
         </div>
-    
+
         <label for="nav_check" class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </label>
-      </header>
+
+
+        <section class="home">
+            <div class="form_container">
+                <i class="uil uil-times form_close"></i>
     
-      <script>
-        let submenu = document.getElementById("submenu");
-        function toggleMenu() {
-          submenu.classList.toggle("open-menu");
-        }
-      </script>
+    
+                <div class="form login_form">
+                    <form action="#">
+                        <h2>INICIAR SESION</h2>
+                        <div class="input_box">
+                            <!-- <input type="email" placeholder="Ingresa tu email" required> -->
+                            <input type="email" id="email" placeholder="Ingresa tu correo electrónico" required>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+                        <div class="input_box">
+                            <!-- <input type="password" placeholder="Ingresa tu contraseña" required> -->
+                            <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <div class="option_field">
+                            <span class="checkbox">
+                                <input type="checkbox" id="check">
+                                <label for="check">Recordarme</label>
+                            </span>
+                            <a href="#" class="forgot_pw">Olvidaste tu contraseña </a>
+                        </div>
+    
+                        <button class="button" id="iniciar-sesion">INICIAR SESION</button>
+                        <div class="login_signup">No tienes cuenta? <a href="#" id="signup">REGISTRARSE</a></div>
+                    </form>
+                </div>
+    
+    
+    
+    
+    
+    
+    
+                <div class="form signup_form">
+                    <form action="#">
+                        <h2>REGISTRARSE</h2>
+                        <div class="input_box">
+                            <input type="email" placeholder="Ingresa tu email" required>
+                            <i class="uil uil-envelope-alt email"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" placeholder="Ingresa tu contraseña" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <div class="input_box">
+                            <input type="password" placeholder="confirmar contraseña" required>
+                            <i class="uil uil-lock password"></i>
+                            <i class="uil uil-eye-slash pw_hide"></i>
+                        </div>
+    
+                        <button class="button">Registrarse</button>
+                        <div class="login_signup">Tienes una cuenta? <a href="#" id="login">INICIAR SESION</a></div>
+                    </form>
+                </div>
+    
+            </div>
+        </section>
+
+        <!-- <div class="user-icon">
+
+            <img src="/img/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
+            <div class="submenus" id="submenu">
+                <div class="submenu">
+                    <div class="info">
+                        <img src="/Captura de pantalla 2024-04-05 003851-modified.png" alt="">
+                        <h2>Jack Steven Correa</h2>
+
+                    </div>
+                    <hr>
+                    <a href="" class="submenu-links">
+                        <img src="/usuario.png">
+                        <p>Mi cuenta</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/hogar.png">
+                        <p>Inicio</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/favorito (3).png">
+                        <p>Favoritos</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/tienda.png ">
+                        <p>Tiendas Oficiales</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/boton-web-de-ayuda.png">
+                        <p>Ayuda/PQR</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/cerrar-sesion.png">
+                        <p>Salir</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label> -->
+    </header>
 
 
 
@@ -241,7 +311,7 @@
 
 
 
-
+<script src="/1.Home_login copy.js" ></script>
     <footer>
         <div class="container-ft">
             <div class="footer-content">
