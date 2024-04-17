@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <meta charset="UTF-8">
@@ -7,90 +8,137 @@
     <title>Document</title>
     <link rel="stylesheet" href="contacto.css">
 </head>
+
 <body>
 
     <header>
-        <div class="logot">
+
+        <div class="logo">
+            <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
             <ul>
-                <li class=><a href="#"><img src="/img/logo I KAN fondo transpaene recortado.png" alt=""></a></li>
+                <li>
+                    <a href="/1.Home.html" class="active">Inicio</a>
+                </li>
+                <li>
+                    <a href="/2.Ikan_ocasion.html" class="">Diseñar Outfit</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="/Ikan_tiendas_oficiales.html">Tiendas</a>
+                </li>
+                <li>
+                    <a href="/contacto.html">Contactos</a>
+                </li>
             </ul>
-        </div>
 
 
-        <div class="container">
-            <nav class="nav">
-                <div class="">
-                    <ul>
-                        <li class=><a href="#"><img src="" alt=""></a></li>
-                    </ul>
+
+            <input type="search" class="search-box" placeholder="Buscar...">
+        </nav>
+
+
+
+        <div class="user-icon">
+
+            <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
+            <div class="submenus" id="submenu">
+                <div class="submenu">
+                    <div class="info">
+                        <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
+                        <h2>Jack Steven Correa</h2>
+
+                    </div>
+                    <hr>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
+                        <p>Mi cuenta</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
+                        <p>Inicio</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
+                        <p>Favoritos</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
+                        <p>Tiendas Oficiales</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
+                        <p>Ayuda/PQR</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
+                        <p>Salir</p>
+                        <span>></span>
+                    </a>
                 </div>
-                <ul class="nav-list">
-
-                    <li class="nav-item">
-                        <a href="" class="nav-link">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link ">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/Ikan_tiendas_oficiales.html" class="nav-link ">Tienda</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contacto.html" class="nav-link ">Contacto</a>
-                    </li>
-                    <li class="fo">
-                        <form action="">
-                            <label type="text" for=""></label>
-                            <input type="text" placeholder="   Buscar">
-                        </form>
-                    </li>
-                </ul>
-                <ul class="nav-list2">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Iniciar Sesion</a>
-                    </li>
-                </ul>
-            </nav>
+            </div>
         </div>
+
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
     </header>
+
+    <script>
+        let submenu = document.getElementById("submenu");
+        function toggleMenu() {
+            submenu.classList.toggle("open-menu");
+        }
+    </script>
 
     <div class="cuerpo"></div>
 
-<!-------------primera seccion-------------------------->
-    
-<div class="container">
-    <h1 class="title">Somos I KAN</h1>
-    <div class="box-container">
-        <h2 class="box-title">Quienes somos</h2>
-    </div>
-    <div class="section">
-        <div class="info">
-            <p>Información dentro de la sección semitransparente.</p>
+    <!-------------primera seccion-------------------------->
+
+    <div class="container">
+        <h1 class="title">Somos I KAN</h1>
+        <div class="box-container">
+            <h2 class="box-title">Quienes somos</h2>
+        </div>
+        <div class="section">
+            <div class="info">
+                <p>Información dentro de la sección semitransparente.</p>
+            </div>
+        </div>
+        <br>
+        <div class="image-section">
+            <img src="/img/Negocios int 1.jpg" alt="">
+        </div>
+        <br>
+        <div class="box-container">
+            <h2 class="box-title">Comunicate con nosotros</h2>
+        </div>
+        <div class="additional-image-section">
+            <img src="/img/qr.png" alt="">
+            <img src="/img/ropa-casual-hombre-7.jpg" alt="">
         </div>
     </div>
+
     <br>
-    <div class="image-section">
-        <img src="/img/Negocios int 1.jpg" alt="">
-    </div>
     <br>
-    <div class="box-container">
-        <h2 class="box-title">Comunicate con nosotros</h2>
-    </div>
-    <div class="additional-image-section">
-        <img src="/img/qr.png" alt="">
-        <img src="/img/ropa-casual-hombre-7.jpg" alt="">
-    </div>
-</div>
 
-<br>
-<br>
-    
 
-<!-------------primera seccion-------------------------->
+    <!-------------primera seccion-------------------------->
 
 
 
-<!-------------footer-------------------------->
+    <!-------------footer-------------------------->
     <footer>
         <div class="container-ft">
             <div class="footer-content">
@@ -147,16 +195,17 @@
                 </div>
             </div>
         </div>
-       
+
     </footer>
     <div class="ulti">
-         <li>Todos los derechos reservados 2024. I kan   Colombia</li>
+        <li>Todos los derechos reservados 2024. I kan Colombia</li>
     </div>
-   
-    
 
-    
+
+
+
 
 
 </body>
+
 </html>
