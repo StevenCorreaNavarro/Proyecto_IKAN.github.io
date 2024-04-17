@@ -81,10 +81,11 @@ ul li a:hover {
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 25px;
-    width: 268px;
+    width: 200px;
     outline: none;
     transition: border-color 0.3s;
     margin-left: 89px;
+    margin-right: 0;
 }
 
 .search-box:focus {
