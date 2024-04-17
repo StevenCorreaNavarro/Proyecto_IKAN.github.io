@@ -83,6 +83,7 @@ ul li a:hover {
 .user-icon img {
     width: 45px;
     margin-top: 8px;
+
 }
 
 header nav {
@@ -107,6 +108,7 @@ header nav {
 }
 
 .user-icon {
+   
     margin-left: 0px;
     /* Mueve el logo de usuario al final de la parte derecha */
 }
@@ -158,8 +160,10 @@ header nav ul li a.active {
 }
 .submenus.open-menu{
     max-height: 714px;
+    
 }
 .submenu{
+    
     background: #fff;
     padding: 20px;
     margin: 10px;
