@@ -1,32 +1,27 @@
 
 const Open2Btn = document.querySelector("#form-open2"),
-    conta = document.querySelector(".homes"),
+    conta = document.querySelector(".conta"),
+
     contactos = document.querySelector(".contactosboton"),
-    Close2Btn = document.querySelector(".form_closed"),
-    pwShowHide2 = document.querySelectorAll(".pw_hide");
+    Close2Btn = document.querySelector(".form_close");
 
-    Open2Btn.addEventListener("click", () => conta.classList.add("show"));      
-    Close2Btn.addEventListener("click", () => conta.classList.remove("show"));  
 
-    pwShowHide2.forEach((icon) => {
-        icon.addEventListener("click", () => {
-            let getPwinput = icon.parentElement.querySelector("input");
-    
-            if (getPwinput.type === "password") {
-                getPwinput.type = "text";
-                icon.classList.replace("uil-eye-slash", "uil-eye");
-            } else {
-                getPwinput.type = "password";
-                icon.classList.replace("uil-eye", "uil-eye-slash")
-            }
-        });
-    });
-const formOpenBtn = document.querySelector("#form-open"),
-    home = document.querySelector(".home"),             
+    Open2Btn.addEventListener("click", () => conta.classList.add("show"));      /**/
+    Close2Btn.addEventListener("click", () => home.classList.remove("show"));     /**/
+
+
+const 
+    /* */
+    /* */
+
+               /** */
+
     formContainer = document.querySelector(".form_container"),
-    formCloseBtn = document.querySelector(".form_close"),
+    
     signupBtn = document.querySelector("#signup"),
     pwShowHide = document.querySelectorAll(".pw_hide");
+
+
 
 formOpenBtn.addEventListener("click", () => home.classList.add("show"));
 formCloseBtn.addEventListener("click", () => home.classList.remove("show"));

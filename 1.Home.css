@@ -145,6 +145,9 @@ header nav ul li a.active {
     background-color: #000;
     color: #ffffff;
 }
+.conta{
+    z-index: 40000;
+}
 
 .iniciarr button:hover {
     transform: scale(1.1);
@@ -266,6 +269,46 @@ img {
     .box:nth-child(4) {
         grid-column-start: span 2;
     }
+}
+
+
+.imagencentrado {
+    justify-content: center;
+
+    width: 100%;
+    display: flex;
+}
+
+
+.imagencentrado img {
+    width: 400px;
+    margin-top: 150px;
+    background-color: #ffffff00;
+    z-index: 1;
+
+
+
+    position: absolute;
+}
+
+.imagencentrado button {
+    z-index: 1;
+
+    background-color: #ffffffd4;
+    border-style: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    position: absolute;
+    margin-top: 550px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.imagencentrado button:hover {
+    color: #0c243a;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px;
 }
 
 /* ---------------AQUI TERMINA GALERIA DE IMAGENES E INICIA GALERIA DE IMAGNES 2 ---------------------*/
@@ -726,6 +769,7 @@ a{
 .button:active{
     transform: scale(0.98);
 }
+.homes::before,
 .home::before{
     content: "";
     position: absolute;
@@ -737,21 +781,23 @@ a{
     pointer-events: none;
     transition: all 0.5s ease-out;
 }
+.homes.show::before,
 .home.show::before{
     opacity: 1;
     pointer-events: auto;
 }
 .form_container{
     position: fixed;
-    max-width: 41%;        
-    max-height: 90%;                                /**/
+    max-width: 65%;        
+    max-height: 65%;                                /**/
     /* width: 100%; */
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1.2);
     z-index: 101;
     background: #fff;
-    padding: 0px;                                            /**/
+    margin: 0%;
+    padding: 0;                                            /**/
     border-radius: 10px;                                      /**/
     box-shadow:rgba(0, 0, 0, 0.1); 
     opacity: 0;
@@ -767,6 +813,7 @@ a{
     width: 1266px;                                     /*tamaño de la caja en hancho*/
     height: 420px;
 }
+.homes.show .form_container,
 .home.show .form_container{                           
     opacity: 1;
     pointer-events: auto;
@@ -780,7 +827,7 @@ a{
 
 } 
 .form .signup_form img{
-    position: fixed;
+    position: absolute;
     max-width: 100%;        
     max-height: 100%;  
     
@@ -793,13 +840,16 @@ a{
 .form_container.active .login_form{
     display: none;
 }
+.form_closed,
 .form_close{
+    
     position: absolute;
     top: 10px;
     right: 20px;
     color: black;
     opacity: 0.7s;
     cursor: pointer;
+    
 }
 .form_container h2{
     font-size: 22px;
@@ -868,9 +918,14 @@ a{
 
 
 
+.homes .form_container img{         /**/
+    height: 100%;
+    width: 100%;
+    border-radius:10px ;  
+}
 
-
-.form_container img{
+.home .form_container img{
+    
     height: 100%;
     width: 100%;
     border-radius: 10px 0px 0px 10px ;                  /**/
