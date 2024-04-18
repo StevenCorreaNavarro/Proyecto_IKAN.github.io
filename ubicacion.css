@@ -287,18 +287,30 @@ font-weight: 600;
     
 
 }
+.direccion{
+    background-color: white;
+    margin: 10px;
+   
+}
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .cueroubic{
     
     padding-left: 5px;
     padding-right: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
-    display: flex;
+    
     background-color: #d9d9d9e8;
     border-radius: 20px;
    
     align-items: center;
     margin-bottom: 50px;
+    padding-bottom: 10px;
     
 }
 .cueroubic2{
@@ -316,9 +328,15 @@ font-weight: 600;
     margin-bottom: 50px;
     
 }
-.cuero .intex{
+.intex{
     padding-left: 100px;
     padding-right: 100px;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+}
+.dividirmapa{
+    display: flex;
 }
 
 
