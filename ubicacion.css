@@ -9,7 +9,7 @@ body {
     margin: 0%;
     box-sizing: border-box;
     /* background:rgb(19, 7, 30);*/
-    background: url(/img/fond.png);
+    background: url(/img/ubicacion/fondo.png);
     background-attachment: fixed;
 
     background-size: cover;
