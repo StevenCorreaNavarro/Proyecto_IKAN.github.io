@@ -291,24 +291,31 @@ img {
     position: absolute;
 }
 
-.imagencentrado button {
+.imagencentrado a {
+    font-size: 40px;
+    color: #0c243a;
     z-index: 1;
-
+    text-decoration: none;
     background-color: #ffffffd4;
     border-style: none;
     padding-left: 80px;
     padding-right: 80px;
     justify-content: center;
+    align-items: center;
     position: absolute;
-    margin-top: 550px;
+    margin-top: 40%;
     display: flex;
     border-radius: 10px;
 }
 
-.imagencentrado button:hover {
-    color: #0c243a;
+.imagencentrado a:hover {
+    color: #000000;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 7px;
+    box-shadow:0px 0px 5px 10px rgba(52, 52, 52, 0.313);
+}
+.imagencentrado h2{
+    color: #0c243a;
+
 }
 
 /* ---------------AQUI TERMINA GALERIA DE IMAGENES E INICIA GALERIA DE IMAGNES 2 ---------------------*/
@@ -780,11 +787,13 @@ a{
     opacity: 0;
     pointer-events: none;
     transition: all 0.5s ease-out;
+    
 }
 .homes.show::before,
 .home.show::before{
     opacity: 1;
     pointer-events: auto;
+    
 }
 .form_container{
     position: fixed;
@@ -803,8 +812,8 @@ a{
     opacity: 0;
     pointer-events: none;
     transition: all 0.4s ease-out;
-    backdrop-filter: blur(0px) opacity;
-
+    
+ 
     box-shadow: 0px 0px 20px 1000px rgba(0, 0, 0, 0.833) ;      /* fondo se oscurece*/
 }
 
