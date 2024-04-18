@@ -145,6 +145,9 @@ header nav ul li a.active {
     background-color: #000;
     color: #ffffff;
 }
+.conta{
+    z-index: 40000;
+}
 
 .iniciarr button:hover {
     transform: scale(1.1);
@@ -726,6 +729,7 @@ a{
 .button:active{
     transform: scale(0.98);
 }
+.homes::before,
 .home::before{
     content: "";
     position: absolute;
@@ -737,6 +741,7 @@ a{
     pointer-events: none;
     transition: all 0.5s ease-out;
 }
+.homes.show::before,
 .home.show::before{
     opacity: 1;
     pointer-events: auto;
@@ -767,6 +772,7 @@ a{
     width: 500px;                                         /*tamaño de la caja en hancho*/
     
 }
+.homes.show .form_container,
 .home.show .form_container{                           
     opacity: 1;
     pointer-events: auto;
@@ -792,6 +798,7 @@ a{
 .form_container.active .login_form{
     display: none;
 }
+.form_closed,
 .form_close{
     position: absolute;
     top: 10px;
@@ -867,9 +874,13 @@ a{
 
 
 
+.homes .form_container img{         /**/
+    height: 100%;
+    width: 100%;
+    border-radius:10px ;  
+}
 
-
-.form_container img{
+.home .form_container img{
     height: 100%;
     width: 100%;
     border-radius: 10px 0px 0px 10px ;                  /**/
