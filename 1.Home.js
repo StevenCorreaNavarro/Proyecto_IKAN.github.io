@@ -33,3 +33,7 @@ let nextAction = (leftPosition,trackWidth,listWidth,slickWidth,track) => {
         track.style.left = `${-1 * (leftPosition + slickWidth)}px`;
     }
 }
+
+
+
+

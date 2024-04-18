@@ -52,23 +52,32 @@ signupBtn.addEventListener("click", (e) => {
     formContainer.classList.add("active");
 });
 
+
 loginBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    formContainer.classList.remove("active")
+    formContainer.classList.remove("active");
 });
 
 
 
 
 
-// Obtener el botón de inicio de sesión por su ID
-const iniciarSesionBtn = document.getElementById("iniciar-sesion");
 
-// Agregar un event listener para escuchar el clic en el botón
-iniciarSesionBtn.addEventListener("click", function () {
-    // Redirigir al usuario a la página deseada
-    window.location.href = "2.Ikan_ocasion.html";
-});
+
+
+
+
+
+
+
+// // Obtener el botón de inicio de sesión por su ID
+// const iniciarSesionBtn = document.getElementById("iniciar-sesion");
+
+// // Agregar un event listener para escuchar el clic en el botón
+// iniciarSesionBtn.addEventListener("click", function () {
+//     // Redirigir al usuario a la página deseada
+//     window.location.href = "2.Ikan_ocasion.html";
+// });
 
 
 
