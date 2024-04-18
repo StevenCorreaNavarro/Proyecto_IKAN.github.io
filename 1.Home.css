@@ -271,6 +271,46 @@ img {
     }
 }
 
+
+.imagencentrado {
+    justify-content: center;
+
+    width: 100%;
+    display: flex;
+}
+
+
+.imagencentrado img {
+    width: 400px;
+    margin-top: 150px;
+    background-color: #ffffff00;
+    z-index: 1;
+
+
+
+    position: absolute;
+}
+
+.imagencentrado button {
+    z-index: 1;
+
+    background-color: #ffffffd4;
+    border-style: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    position: absolute;
+    margin-top: 550px;
+    display: flex;
+    border-radius: 10px;
+}
+
+.imagencentrado button:hover {
+    color: #0c243a;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 7px;
+}
+
 /* ---------------AQUI TERMINA GALERIA DE IMAGENES E INICIA GALERIA DE IMAGNES 2 ---------------------*/
 
 
