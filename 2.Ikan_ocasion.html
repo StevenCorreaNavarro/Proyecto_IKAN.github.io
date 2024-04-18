@@ -14,9 +14,10 @@
     <header>
 
         <div class="logo">
-          <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
+            <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
         </div>
         <input type="checkbox" id="nav_check" hidden>
+        
         <nav>
             <ul>
                 <li>
@@ -32,75 +33,84 @@
                     <a href="/Ikan_tiendas_oficiales.html">Tiendas</a>
                 </li>
                 <li>
-                    <a href="/contacto.html">Contactos</a>
+                    <a href="#" id="form-open2">Contactos</a>
                 </li>
             </ul>
-    
-    
-          
-          <input type="search" class="search-box" placeholder="Buscar...">            
+            <input type="search" class="search-box" placeholder="Buscar...">
         </nav>
-    
-        
-    
-        <div class="user-icon">
-    
-          <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
-          <div class="submenus" id="submenu">
-            <div class="submenu">
-              <div class="info">
-                <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
-                <h2>Jack Steven Correa</h2>
-    
-              </div>
-              <hr>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
-                <p>Mi cuenta</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
-                <p>Inicio</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
-                <p>Favoritos</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
-                <p>Tiendas Oficiales</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
-                <p>Ayuda/PQR</p>
-                <span>></span>
-              </a>
-              <a href="" class="submenu-links">
-                <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
-                <p>Salir</p>
-                <span>></span>
-              </a>
+        <section class="homes">
+            <div class="form_container">
+                <i class="uil uil-times form_closed">X</i>
+                <!-- imagen del inicio de secion  -->
+                
+                <div>
+                    <img src="/img/qr.png" alt="" height="10">
+                </div>
             </div>
-          </div>
+        </section>
+        
+
+
+
+        <div class="user-icon">
+
+            <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
+            <div class="submenus" id="submenu">
+                <div class="submenu">
+                    <div class="info">
+                        <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
+                        <h2>Jack Steven Correa</h2>
+
+                    </div>
+                    <hr>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
+                        <p>Mi cuenta</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
+                        <p>Inicio</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
+                        <p>Favoritos</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
+                        <p>Tiendas Oficiales</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
+                        <p>Ayuda/PQR</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
+                        <p>Salir</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
         </div>
-    
+
         <label for="nav_check" class="hamburger">
-          <div></div>
-          <div></div>
-          <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
         </label>
-      </header>
-    
-      <script>
+        
+    </header>
+
+    <script>
         let submenu = document.getElementById("submenu");
         function toggleMenu() {
-          submenu.classList.toggle("open-menu");
+            submenu.classList.toggle("open-menu");
         }
-      </script>
+    </script>
 
 
 
@@ -108,13 +118,15 @@
 
     <div class="cuerpo">
         <div class="imagencentrado">
-            
+
             <img src="/img/logo I KAN blanco.png" alt="">
-            <button><h2> ocasiones</h2></button>
-           
+            <button>
+                <h2> ocasiones</h2>
+            </button>
+
 
         </div>
-        
+
         <!-- ****************************************************slider auomatico ************************************************** -->
         <div class="slider">
             <figure>
@@ -170,7 +182,9 @@
                         </p>
                         <br><br>
                         <button>
-                            <a href="/Ikan_estilo.html"><h2> descubre </h2></a>
+                            <a href="/Ikan_estilo.html">
+                                <h2> descubre </h2>
+                            </a>
                         </button>
                     </center>
                 </div>
@@ -304,7 +318,7 @@
         <li>Todos los derechos reservados 2024. I kan Colombia</li>
     </div>
 
-
+    <script src="/1.Home_login.js"></script>
 
 </body>
 
