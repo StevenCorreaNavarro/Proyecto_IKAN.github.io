@@ -312,14 +312,15 @@ font-weight: 600;
     margin: 40px;
 }
 
-.intex button{
+.intex a{
+    padding: 8px;
     border-style: none;
     background-color: rgba(0, 0, 0, 0.827);
     color: white;
     border-radius: 10px;
 }
 
-.intex button:hover{
+.intex a:hover{
     background-color: #535252;
     color: #d5d5d5;
 
