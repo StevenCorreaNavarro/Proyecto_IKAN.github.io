@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
@@ -89,12 +89,6 @@
         </label>
     </header>
 
-    <script>
-        let submenu = document.getElementById("submenu");
-        function toggleMenu() {
-            submenu.classList.toggle("open-menu");
-        }
-    </script>
 
 
 
@@ -105,19 +99,21 @@
 
 
 
-    <div>
 
-        <div class="cuer">
-            <div class="texgr">
-                <h1>Tiendas oficiales</h1>
 
-            </div>
-            <div class="cuadrado">
+
+    <div class="cuer">
+        <div class="texgr">
+            <h1>Tiendas oficiales</h1>
+
+        </div>
+        <!-- <div class="cuadrado">
                 <div class="cueroubic">
                     <div class="c">
                         <img src="/img/ubicacion/ubic.png" alt="">
+
                         <div class="intex">
-                            mapas en esta parte
+
                         </div>
                     </div>
                     <div class="direccion">
@@ -125,29 +121,94 @@
                             magnam nemo veniam? Esse laboriosam adipisci, minus iure, praesentium, similique nesciunt
                             obcaecati iusto nostrum sed vel illum sit!</p>
                     </div>
-                </div>
+                </div> -->
 
 
 
-                <div class="cueroubic2">
+
+
+
+
+
+        <!-- <div class="cueroubic2">
                     <img src="/img/ubicacion/1.png" alt="">
                     <img src="/img/ubicacion/2.png" alt="">
 
                     <img src="/img/ubicacion/3.png" alt="">
                     <img src="/img/ubicacion/4.png" alt="">
 
+                </div> -->
+
+    </div>
+    </div>
+
+    <title>Locator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            
+        }
+
+        gmpx-store-locator {
+            width: 88%;
+            height: 70%;
+            margin-left: 120px;
+            
+
+            /* These parameters customize the appearance of Locator Plus. See the documentation at
+           https://github.com/googlemaps/extended-component-library/blob/main/src/store_locator/README.md
+           for more information. */
+            --gmpx-color-surface: #fff;
+            --gmpx-color-on-surface: #212121;
+            --gmpx-color-on-surface-variant: #757575;
+            --gmpx-color-primary: #1967d2;
+            --gmpx-color-outline: #e0e0e0;
+            --gmpx-fixed-panel-width-row-layout: 28.5em;
+            --gmpx-fixed-panel-height-column-layout: 65%;
+            --gmpx-font-family-base: "Roboto", sans-serif;
+            --gmpx-font-family-headings: "Roboto", sans-serif;
+            --gmpx-font-size-base: 0.875rem;
+            --gmpx-hours-color-open: #188038;
+            --gmpx-hours-color-closed: #d50000;
+            --gmpx-rating-color: #ffb300;
+            --gmpx-rating-color-empty: #e0e0e0;
+        }
+    </style>
+    <script>
+        const CONFIGURATION = {
+            "locations": [
+                { "title": "AMERICANINO POPAYÁN CAMPANARIO", "address1": "Carrera 9 # 27AN21 Centro Comercial Campanario", "address2": "Comuna 1, Popayán, Cauca, Colombia", "coords": { "lat": 2.459566284292291, "lng": -76.59435858213956 }, "placeId": "ChIJF61Qm5QDMI4RsFE8nRP72_w" },
+                { "title": "Royal Films", "address1": "Cra. 9a #24AN-21", "address2": "Comuna 1, Popayán, Cauca, Colombia", "coords": { "lat": 2.459163394778142, "lng": -76.59475170491086 }, "placeId": "ChIJEapXY50DMI4RR8YQ0gDfg64" }
+            ],
+            "mapOptions": { "center": { "lat": 38.0, "lng": -100.0 }, "fullscreenControl": true, "mapTypeControl": false, "streetViewControl": false, "zoom": 4, "zoomControl": true, "maxZoom": 17, "mapId": "" },
+            "mapsApiKey": "AIzaSyCXfk4vbT0CeYlEAlmaonHde4EmsAWvoSs",
+            "capabilities": { "input": true, "autocomplete": true, "directions": true, "distanceMatrix": true, "details": true, "actions": false }
+        };
+
+    </script>
+    <script type="module">
+        document.addEventListener('DOMContentLoaded', async () => {
+            await customElements.whenDefined('gmpx-store-locator');
+            const locator = document.querySelector('gmpx-store-locator');
+            locator.configureFromQuickBuilder(CONFIGURATION);
+        });
+    </script>
+
+    <!-- Please note unpkg.com is unaffiliated with Google Maps Platform. -->
+    <script type="module" src="https://unpkg.com/@googlemaps/extended-component-library@0.6"></script>
+
+    <!-- Uses components from the Extended Component Library; see
+         https://github.com/googlemaps/extended-component-library for more information
+         on these HTML tags and how to configure them. -->
+    <gmpx-api-loader key="AIzaSyCXfk4vbT0CeYlEAlmaonHde4EmsAWvoSs"
+        solution-channel="GMP_QB_locatorplus_v10_cABCDE"></gmpx-api-loader>
+    <gmpx-store-locator map-id="DEMO_MAP_ID"></gmpx-store-locator>
 
 
-                </div>
-
-
-
-
-
-
-
-            </div>
-        </div>
 
 
 
@@ -171,10 +232,14 @@
 
 
 
+    <script>
+        let submenu = document.getElementById("submenu");
+        function toggleMenu() {
+            submenu.classList.toggle("open-menu");
+        }
+    </script>
 
-
-
-        <footer>
+    <!-- <footer>
             <div class="container-ft">
                 <div class="footer-content">
                     <div class="footer-div">
@@ -236,7 +301,12 @@
         </footer>
         <div class="ulti">
             <li>Todos los derechos reservados 2024. I kan Colombia</li>
-        </div>
+        </div> -->
+
+
+
+    
+
 
 
 
