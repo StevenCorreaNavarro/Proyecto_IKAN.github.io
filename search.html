@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -50,4 +50,57 @@
         }
     </script>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Custom Search API Example</title>
+</head>
+    
+<body onload="fetchSearchResults()">
+    <script async src="https://cse.google.com/cse.js?cx=b751aa8b758cc4d6a"></script>
+
+    <div class="gcse-search"></div>
+    <h1>Google Custom Search Results</h1>
+    <div id="search-results"></div>
+
+    <script>
+        function fetchSearchResults() {
+            const apiKey = 'AIzaSyA0V0HiQ_c5wWtU61z2EfAQkduUl1Z1XeM';
+            const searchEngineId = 'b751aa8b758cc4d6a';
+            const query = 'boda';
+
+            const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&q=${query}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    const results = data.items;
+                    const searchResultsDiv = document.getElementById('search-results');
+                    searchResultsDiv.innerHTML = '';
+
+                    results.forEach(result => {
+                        const title = result.title;
+                        const link = result.link;
+                        const imageLink = result.pagemap ? (result.pagemap.cse_thumbnail ? result.pagemap.cse_thumbnail[0].src : '') : '';
+
+                        const resultItem = document.createElement('div');
+                        resultItem.innerHTML = `
+                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                                <img src="${imageLink}" alt="Thumbnail" style="width: 100px; height: 100px; margin-right: 20px;">
+                                <p style="margin: 0;"><a href="${link}" target="_blank">${title}</a></p>
+                            </div>
+                        `;
+                        searchResultsDiv.appendChild(resultItem);
+                    });
+                })
+                .catch(error => console.error('Error fetching search results:', error));
+        }
+    </script>
+</body>
 </html>
+
