@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda personalizada de Google</title>
+</head>
+<body>
+    <h1>Búsqueda personalizada de Google</h1>
+    
+    <!-- Agrega un campo de entrada para ingresar el término de búsqueda -->
+    <input type="text" id="searchTerm" placeholder="Ingresa tu búsqueda">
+    <button onclick="search()">Buscar</button>
+
+    <!-- Contenedor para mostrar los resultados de la búsqueda -->
+    <div id="searchResults"></div>
+
+    <!-- Script para realizar la búsqueda -->
+    <script>
+        function search() {
+            var searchTerm = document.getElementById('searchTerm').value;
+            var apiKey = 'AIzaSyCXfk4vbT0CeYlEAlmaonHde4EmsAWvoSs'; // Reemplaza con tu clave de API
+            var cx = 'Tb751aa8b758cc4d6a'; // Reemplaza con tu ID de motor de búsqueda
+            var url = `https://www.googleapis.com/customsearch/v1?q=${searchTerm}&key=${apiKey}&cx=${cx}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    displayResults(data.items);
+                })
+                .catch(error => console.error('Error al realizar la búsqueda:', error));
+        }
+
+        function displayResults(results) {
+            var searchResults = document.getElementById('searchResults');
+            searchResults.innerHTML = '';
+
+            results.forEach(result => {
+                var link = document.createElement('a');
+                link.href = result.link;
+                link.textContent = result.title;
+                link.target = '_blank';
+
+                var snippet = document.createElement('p');
+                snippet.textContent = result.snippet;
+
+                var div = document.createElement('div');
+                div.appendChild(link);
+                div.appendChild(snippet);
+
+                searchResults.appendChild(div);
+            });
+        }
+    </script>
+</body>
+</html>
