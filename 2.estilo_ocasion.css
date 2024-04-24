@@ -401,11 +401,12 @@ header nav ul li a.active {
 }
 
 .cuero img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
+    margin-left: 3px;
 
 }
 
@@ -434,8 +435,8 @@ header nav ul li a.active {
 }
 
 .cuero2 img {
-    height: 350px;
-    width: 800px;
+    height: 500px;
+    width: 780px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
@@ -469,7 +470,7 @@ h1 {
 }
 
 .cuero3 img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -497,13 +498,13 @@ h1 {
 }
 
 .cuero4 img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
     border-radius: 0 10px 10px 0;
-
+    margin-left: 3px;
 }
 
 
@@ -568,6 +569,7 @@ figure {
     width: 25%;
     /* width dibagi slide */
     float: left;
+    height: 1000px;
 }
 
 .slide h1 {
@@ -582,7 +584,7 @@ figure {
 
 .slide img {
     width: 100%;
-    height: 100vh;
+    height: 120vh;
 }
 
 @keyframes slide {
