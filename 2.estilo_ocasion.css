@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-position: center;
     background-color: #34493a;
+    font-family: "Poppins", sans-serif;
 }
 
 /* =================================   barra de menu ================================*/
@@ -339,12 +340,10 @@ header nav ul li a.active {
 .texgr {
     background-color: #00000000;
     font-size: 50px;
-
-
-
     height: 100%;
     margin-bottom: 100px;
-
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 10px;
 }
 
 .cuer .texgr {
@@ -367,18 +366,19 @@ header nav ul li a.active {
     text-align: center;
     background: #D9D9D9;
     margin-bottom: 0%;
+    margin-top: -10px;
 }
 
 .texgr h3 {
 
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Poppins", sans-serif;
     color: #ffffff;
     padding: 120px;
     padding-left: 10%;
     padding-right: 10%;
-
     text-align: center;
     background: #00000000;
+    font-size: 50px;
 
 }
 
@@ -401,11 +401,12 @@ header nav ul li a.active {
 }
 
 .cuero img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
+    margin-left: 3px;
 
 }
 
@@ -418,7 +419,7 @@ header nav ul li a.active {
 .cuero2 {
     margin-left: 50px;
     padding-right: 50px;
-    margin-top: 2px;
+    margin-top: -160px;
     margin-bottom: 2px;
     display: flex;
     background-color: #C9E5F6;
@@ -434,8 +435,8 @@ header nav ul li a.active {
 }
 
 .cuero2 img {
-    height: 350px;
-    width: 800px;
+    height: 500px;
+    width: 780px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
@@ -453,7 +454,7 @@ h1 {
 .cuero3 {
     margin-left: 50px;
     padding-right: 50px;
-    margin-top: 2px;
+    margin-top: -68px;
     margin-bottom: 2px;
     display: flex;
     background-color: #C9E5F6;
@@ -469,7 +470,7 @@ h1 {
 }
 
 .cuero3 img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
@@ -497,13 +498,13 @@ h1 {
 }
 
 .cuero4 img {
-    height: 350px;
+    height: 500px;
     width: 800px;
     margin-bottom: 0%;
     margin-top: 0%;
     padding: 0%;
     border-radius: 0 10px 10px 0;
-
+    margin-left: 3px;
 }
 
 
@@ -516,15 +517,29 @@ h1 {
 
 .intex button {
     border-style: none;
-    background-color: rgba(0, 0, 0, 0.827);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.827);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
+    width: 150px;
+    height: 41px;
+    
 }
 
 .intex button:hover {
-    background-color: #535252;
-    color: #d5d5d5;
+    background-color: #000000;
+    color: #ffffff;
 
+}
+.intex h2{
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    
+}
+.intex h2:hover{
+    color: #ffffff;
+    font-size: 23px;
+    transition: 0.2s ease-in;
 }
 
 .cajon {
@@ -553,7 +568,7 @@ h1 {
 
 }
 
-figure {
+figure{
     margin: 0%;
     padding: 0%;
     position: relative;
@@ -568,6 +583,7 @@ figure {
     width: 25%;
     /* width dibagi slide */
     float: left;
+    height: 900px;
 }
 
 .slide h1 {
@@ -582,7 +598,7 @@ figure {
 
 .slide img {
     width: 100%;
-    height: 100vh;
+    height: 125vh;
 }
 
 @keyframes slide {
@@ -657,100 +673,179 @@ figure {
 
 
 
-.footer-content {
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
-    margin: 0%;
-    padding: 0%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-footer {
-
-    position: relative;
-
-    width: 100%;
-    height: 30%;
-    justify-content: center;
-
-    background-color: rgb(0, 0, 0);
-    backdrop-filter: blur(70px);
-    color: #fff;
-    text-align: center;
-    bottom: 0%;
-}
-
-.social-media {
-    display: flex;
-
-    align-items: center;
+/*:::::Pie de Pagina*/
 
 
-
-}
-
-
-.footer-content h4 {
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 3px;
-    margin-bottom: 0;
-}
-
-.logft {
-
-    margin: none;
-}
-
-.footer-content-about p {
-    line-height: 2;
-}
-
-.footer-div img {
-    margin: 10%;
-
-
-    height: 200px;
-}
-
-.social-icons {
-    list-style: none;
-    margin-bottom: 0;
-    width: 20vw;
-    background-color: #000000;
-}
-
-.social-icons i {
-    font-size: 20px;
+.regis {
+    background-color: #000;
     color: #ffffff;
-    /*padding: 0rem 1rem;     /* espacios entre iconos de redes sociales */
-    /*padding: 0px 10px 0px 10px ;*/
-
+    text-align: center;
+    height: 60px;
+    justify-content: center;
+    padding: px;
+    border-color: #fff;
+    margin-top: -280px;
+}
+.regis marquee{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    
+}
+.regis marquee button{
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+.regis button {
+    padding: 0px 20px; /* Espacio interno del botón */
+    font-size: 16px; /* Tamaño de la fuente del botón */
+    background-color: rgb(250, 250, 251); /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    border: none; /* Eliminar borde del botón */
+    cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+    margin-top: 10px;
+    margin: 10px;
 }
 
-.social-icons i:hover,
-.social-icons i:focus {
-    color: rgb(202, 186, 0);
+.pie-pagina {
+    width: 100%;
+    background-color: #000000;
+    margin-top: 5px;
 }
 
-.social-icons {
-    margin: 2%;
-    align-items: flex-end;
-    height: 45VH;
 
-
+.pie-pagina .grupo-1 {
+    width: 100%;
+    max-width: 1471px;
+    margin: auto;
+    margin-top: auto;
+    display: flex;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    margin-top: -100px;
 }
 
-.social-icons li {
-    padding: 5%;
-
+.pie-pagina .grupo-1 .box picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.ulti {
-    color: rgb(255, 255, 255);
-    background-color: black;
+.pie-pagina .grupo-1 .box picture img {
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+    color: #efefef;
+    margin-bottom: 10px;
     font-size: 15px;
 }
 
+.pie-pagina .grupo-1 .red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #706b6b;
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+    color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+    background-color: #ffffff;
+    padding: 15px 10px;
+    text-align: center;
+    color: #000000;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+}
+
+@media screen and (max-width:800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
+.hamburger {
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    background: #000;
+}
+
+/* --------------------------------------------------- Resposive ---------------------- */
+@media only screen and (max-width: 900px) {
+    header {
+        padding: 0 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .hamburger {
+        display: block;
+        margin-right: 10px;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        background: #fff;
+        padding: 30px;
+        transition: 0.3s;
+    }
+
+    header #nav_check:checked~nav {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li a {
+        margin: 5px 0;
+    }
+} 
 
 
 
