@@ -264,6 +264,7 @@ font-weight: 600;
     width: 100%;
     margin: 0%;
     padding: 0%;
+    margin-top: 309px;
 }
 
 .texgr h1 {
@@ -387,15 +388,31 @@ h1 {
 
 .intex button {
     border-style: none;
-    background-color: rgba(0, 0, 0, 0.827);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.827);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
+    width: 184px;
+    height: 41px;
+    
 }
 
 .intex button:hover {
-    background-color: #535252;
-    color: #d5d5d5;
+    background-color: #000000;
+    color: #ffffff;
 
+}
+
+.intex h2{
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    
+}
+
+.intex h2:hover{
+    color: #ffffff;
+    font-size: 23px;
+    transition: 0.2s ease-in;
 }
 
 .cajon {

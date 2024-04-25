@@ -1,71 +1,119 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Custom Search API Example</title>
-</head>
-    
-<body>
-    <script async src="https://cse.google.com/cse.js?cx=b751aa8b758cc4d6a"></script>
-
-    <div class="gcse-search"></div>
-    <h1>Google Custom Search Results</h1>
-    <div id="search-results"></div>
-
-    <button onclick="fetchSearchResults()">Buscar</button>
-
-    <script>
-        function fetchSearchResults() {
-            const apiKey = 'AIzaSyA0V0HiQ_c5wWtU61z2EfAQkduUl1Z1XeM';
-            const searchEngineId = 'b751aa8b758cc4d6a';
-            const query = 'boda';
-        
-
-            const url = `https://www.googleapis.com/customsearch/v1?key=${apiKey}&cx=${searchEngineId}&q=${query}`;
-
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    const results = data.items;
-                    const searchResultsDiv = document.getElementById('search-results');
-                    searchResultsDiv.innerHTML = '';
-
-                    results.forEach(result => {
-                        const title = result.title;
-                        const link = result.link;
-                        const imageLink = result.pagemap ? (result.pagemap.cse_thumbnail ? result.pagemap.cse_thumbnail[0].src : '') : '';
-
-                        const resultItem = document.createElement('div');
-                        resultItem.innerHTML = `
-                            <div style="display: flex; align-items: center; margin-bottom: 10px;">
-                                <img src="${imageLink}" alt="Thumbnail" style="width: 100px; height: 100px; margin-right: 20px;">
-                                <p style="margin: 0;"><a href="${link}" target="_blank">${title}</a></p>
-                            </div>
-                        `;
-                        searchResultsDiv.appendChild(resultItem);
-                    });
-                })
-                .catch(error => console.error('Error fetching search results:', error));
-        }
-    </script>
-</body>
-</html> -->
-
-
-
-
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Custom Search API Example</title>
+    <link rel="shortcut icon" href="/img/LOGOS BLANCO Y NEGRO/BLANCO.png" type="image/x-icon">
+    <link rel="stylesheet" href="/estilo_casual.css">
+    <title>Buscar Prendas - I kan </title>
     <link rel="stylesheet" href="/search.css">
 </head>
     
 <body onload="fetchSearchResults()">
+
+    <header>
+
+        <div class="logo">
+            <img src="/IMG HEADER - SUBMENU HEADER/LOGOS/NEGRO.png" alt="">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        
+        <nav>
+            <ul>
+                <li>
+                    <a href="/1.Home.html" class="">Inicio</a>
+                </li>
+                <li>
+                    <a href="/2.Ikan_ocasion.html" class="active">Diseñar Outfit</a>
+                </li>
+                <li>
+                    <a href="">Blog</a>
+                </li>
+                <li>
+                    <a href="/Ikan_tiendas_oficiales.html">Tiendas</a>
+                </li>
+                <li>
+                    <a href="#" id="form-open2">Contactos</a>
+                </li>
+            </ul>
+            <input type="search" class="search-box" placeholder="Buscar...">
+        </nav>
+        <section class="homes">
+            <div class="form_container">
+                <i class="uil uil-times form_closed">X</i>
+                <!-- imagen del inicio de secion  -->
+                
+                <div>
+                    <img src="/img/qr.png" alt="" height="10">
+                </div>
+            </div>
+        </section>
+        
+
+
+
+        <div class="user-icon">
+
+            <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" class="user-pic" onclick="toggleMenu()">
+            <div class="submenus" id="submenu">
+                <div class="submenu">
+                    <div class="info">
+                        <img src="/IMG HEADER - SUBMENU HEADER/FOTO PERFIL.png" alt="">
+                        <h2>Jack Steven Correa</h2>
+
+                    </div>
+                    <hr>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/usuario.png">
+                        <p>Mi cuenta</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/hogar.png">
+                        <p>Inicio</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/favorito (3).png">
+                        <p>Favoritos</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/tienda.png">
+                        <p>Tiendas Oficiales</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/boton-web-de-ayuda.png">
+                        <p>Ayuda/PQR</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="submenu-links">
+                        <img src="/IMG HEADER - SUBMENU HEADER/cerrar-sesion.png">
+                        <p>Salir</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+        
+    </header>
+
+    <script>
+        let submenu = document.getElementById("submenu");
+        function toggleMenu() {
+            submenu.classList.toggle("open-menu");
+        }
+    </script>
+    <br><br><br><br>
+
     <script async src="https://cse.google.com/cse.js?cx=b751aa8b758cc4d6a"></script>
 
     <div class="gcse-search"></div>
@@ -76,7 +124,7 @@
         function fetchSearchResults() {
             const apiKey = 'AIzaSyA0V0HiQ_c5wWtU61z2EfAQkduUl1Z1XeM';
             const searchEngineId = 'b751aa8b758cc4d6a';
-    const queries = ['gorras','blazers','gabanes','blusas','zapatos','medias']; // Lista de términos de búsqueda
+    const queries = ['gaban','blazer','jeans','blusas','botas','botines','gafas']; // Lista de términos de búsqueda
 
     const searchResultsDiv = document.getElementById('search-results');
     searchResultsDiv.innerHTML = ''; // Limpiar resultados anteriores
@@ -165,6 +213,7 @@
         //         .catch(error => console.error('Error fetching search results:', error));
         // }
     </script>
+    <script src="#"></script>
 </body>
 </html>
 
