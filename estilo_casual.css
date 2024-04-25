@@ -316,3 +316,18 @@ font-weight: 600;
   height: 420px;                                        /*tamaño de la caja en hancho*/
 
 } 
+
+.maps button{
+    margin: 10px;
+    display: flex;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 9px;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+}

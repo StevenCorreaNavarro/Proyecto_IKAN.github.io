@@ -341,7 +341,7 @@ h1 {
 .cuero3 {
     padding-left: 50px;
     padding-right: 50px;
-    margin-top: 10px;
+    margin-top: -477px;
     margin-bottom: 10px;
     display: flex;
     background-color: #A3C7BD;
@@ -467,7 +467,7 @@ h1 {
     /* tamaño del recuadro del slider en hancho */
 
 
-    height: 400px;
+    height: 500px;
     /* tamaño del recuadro del slider en alto */
 }
 
@@ -543,7 +543,7 @@ figure {
 
 .slide img {
     width: 100%;
-    height: 580px;
+    height: 846px;
 }
 
 @keyframes slide {
