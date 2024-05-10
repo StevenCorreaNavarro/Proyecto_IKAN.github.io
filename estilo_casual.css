@@ -70,7 +70,7 @@ ul li a:hover {
 
 .user-icon img {
     width: 45px;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 header nav {
@@ -378,10 +378,27 @@ header nav ul li a.active {
     z-index: 1;
 } */
 
+.cuadre-busc{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.maps_cuadre{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
 .maps {
-    position: relative;
+    background-color: rgb(156, 201, 156);
+    margin: 0%;
+    padding: 15px;
+    /* position: relative; */
     /* Asegura que los elementos posicionados dentro de él se posicionen correctamente */
-    left: 23px;
+    /* left: 23px; */
+    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -389,14 +406,15 @@ header nav ul li a.active {
 .maps img{
     width: 54px;
     height: 57px;
-    margin-left: 818px;
-    margin-top: -177px;
+    margin-left: 518px;
+    margin-top: -100px;
 }
 
 .button-link {
+    margin: 10px;
     position: absolute;
     /* Posiciona el enlace de manera absoluta dentro del contenedor */
-    top: 50%;
+    /* top: 50%; */
     /* Lo posiciona en la mitad superior del contenedor */
     left: 64%;
     /* Lo posiciona en la mitad izquierda del contenedor */
