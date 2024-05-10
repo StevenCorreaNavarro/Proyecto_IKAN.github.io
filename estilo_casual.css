@@ -411,6 +411,7 @@ header nav ul li a.active {
 
 .maps2 h1{
     font-size: 36px;
+    color: #3b3b3b;
     
 
 }
@@ -471,7 +472,7 @@ display: flex;
     z-index: 1;
     border: none;
     /* Asegura que el botón esté delante del texto */
-    background-color: #002601;
+    background-color: #013801;
     color: #ffffff;
     width: 360px;
     height: 54px;
@@ -489,5 +490,5 @@ display: flex;
 
 .button-link button:hover {
     transition: 0.1s ease-in-out;
-    background-color: #000000a5;
+    background-color: #000000;
 }
