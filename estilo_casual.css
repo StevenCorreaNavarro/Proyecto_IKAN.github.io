@@ -70,7 +70,7 @@ ul li a:hover {
 
 .user-icon img {
     width: 45px;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 header nav {
@@ -378,25 +378,84 @@ header nav ul li a.active {
     z-index: 1;
 } */
 
-.maps {
-    position: relative;
-    /* Asegura que los elementos posicionados dentro de él se posicionen correctamente */
-    left: 23px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-.maps img{
+/* .cuadre-busc{
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+} */
+
+
+
+/* .maps_cuadre_img img{
+    margin: 0%;
+    padding: 0%;
     width: 54px;
     height: 57px;
-    margin-left: 818px;
-    margin-top: -177px;
+    margin-left: 518px;
+    margin-top: -100px;
+
+} */
+
+.maps .maps2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 100px;
+    
+    
+    
 }
 
+.maps2 h1{
+    font-size: 36px;
+    color: #3b3b3b;
+    
+
+}
+.maps2 img{
+    align-items: center;
+    justify-content: center;
+    padding-left: 12PX;
+    /* padding-right: 10PX; */
+}
+.maps {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(156, 201, 156);
+    margin: 0%;
+    /* padding: 15px; */
+    position: relative;
+    /* Asegura que los elementos posicionados dentro de él se posicionen correctamente */
+    /* left: 23px; */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    text-align: center;
+}
+
+/* .maps2 li{
+align-items: center;
+display: flex;
+} */
+
+.maps img{
+    
+    
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    /* margin-left: 518px;
+    margin-top: -170px; */
+} 
+
 .button-link {
-    position: absolute;
+    /* margin: 10px; */
+    /* position: absolute; */
     /* Posiciona el enlace de manera absoluta dentro del contenedor */
-    top: 50%;
+    /* top: 50%; */
     /* Lo posiciona en la mitad superior del contenedor */
     left: 64%;
     /* Lo posiciona en la mitad izquierda del contenedor */
@@ -404,23 +463,32 @@ header nav ul li a.active {
     /* Centra el enlace horizontal y verticalmente */
     z-index: 1;
     /* Asegura que el botón esté delante del texto */
+    height: 100PX;                                      /**/
 
 
 }
 
 .button-link button {
     z-index: 1;
+    border: none;
     /* Asegura que el botón esté delante del texto */
-    background-color: #000;
+    background-color: #013801;
     color: #ffffff;
-    width: 240px;
+    width: 360px;
     height: 54px;
-    font-size: 18px;
-    border-radius: 15px;
+    font-size: 20px;
+    border-radius: 10px;
     font-family: "Poppins", sans-serif;
+    padding-left: 10PX;
+    padding-right: 10PX;
+    padding-top: 0%;
+    padding-bottom: 8px;
+    text-align: center;
+    
 
 }
 
-.button-link:hover {
-    transition: 0.5s ease-in-out;
+.button-link button:hover {
+    transition: 0.1s ease-in-out;
+    background-color: #000000;
 }

@@ -5,6 +5,63 @@
 
 }
 
+
+.imagencentrado {
+    justify-content: center;
+
+    width: 100%;
+    display: flex;
+}
+
+
+.imagencentrado img {
+    width: 400px;
+    margin-top: 150px;
+    background-color: #ffffff00;
+    z-index: 1;
+
+
+
+    position: absolute;
+}
+
+.imagencentrado a {
+    font-size: 40px;
+    color: #0c243a;
+    z-index: 1;
+    text-decoration: none;
+    background-color: #ffffffd4;
+    border-style: none;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 40%;
+    display: flex;
+    border-radius: 10px;
+}
+
+.imagencentrado a:hover {
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    box-shadow:0px 0px 5px 10px rgba(52, 52, 52, 0.313);
+}
+.imagencentrado h2{
+    color: #0c243a;
+
+}
+
+
+
+
+
+.enlace {
+    position: fixed;
+    display: inline-block;
+}
+
+
 .contenedor {
     max-width: 1860px;
     margin: 0 auto;
@@ -13,6 +70,22 @@
     grid-template-rows: 260px;
     grid-gap: 1px;
     padding: 100px 0;
+}
+
+.button_1,
+.button_2,
+.button_3,
+.button_4 {
+    position: absolute;
+    top: 20px;
+    /* Ajusta la posición vertical del botón */
+    left: 20px;
+    /* Ajusta la posición horizontal del botón */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .box img {
@@ -25,8 +98,9 @@
 .box {
     position: relative;
     overflow: hidden;
-    
+
 }
+
 
 img {
     display: block;
@@ -40,22 +114,29 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Color y opacidad del overlay */
-    opacity: 0; /* Inicialmente oculto */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Color y opacidad del overlay */
+    opacity: 0;
+    /* Inicialmente oculto */
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.3s; /* Efecto de transición suave */
+    transition: opacity 0.3s;
+    /* Efecto de transición suave */
 }
 
 .overlays p {
-    color: #fff; /* Color del texto */
-    font-size: 16px; /* Tamaño del texto */
-    text-align: center; /* Alineación del texto */
+    color: #fff;
+    /* Color del texto */
+    font-size: 16px;
+    /* Tamaño del texto */
+    text-align: center;
+    /* Alineación del texto */
 }
 
 .box:hover .overlays {
-    opacity: 1; /* Mostrar overlay al pasar el mouse sobre la imagen */
+    opacity: 1;
+    /* Mostrar overlay al pasar el mouse sobre la imagen */
 }
 
 .box:nth-child(1) {

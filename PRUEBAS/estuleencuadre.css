@@ -1,0 +1,45 @@
+
+.enlace{
+    
+    position: relative;
+  display: inline-block;
+}
+
+.acce, .supe, .infe ,.calz{
+    position: absolute;
+  top: 20px; /* Ajusta la posición vertical del botón */
+  left: 40%; /* Ajusta la posición horizontal del botón */
+  padding: 10px 20px;
+  background-color: #e5101000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+
+img{
+    width: 1000px;
+}
+.acce{
+    width: 200px;
+    top: 10%;
+}
+.acce:hover{
+    
+}
+.supe{
+    height: 300px;
+    width: 200px;
+    top: 20%;
+}
+
+.infe{
+    height: 450px;
+    width: 200px;
+    top: 45%;
+}
+.calz{
+    width: 200px;
+    top: 85%;
+    
+}

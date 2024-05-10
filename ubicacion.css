@@ -257,13 +257,17 @@ font-weight: 600;
 
 /*             aqui dar dimencion al cuerpo*/
 .cuer{
-    margin-left:100px;
-    margin-right:100px;
+    /* margin-left:100px;
+    margin-right:100px; */
     max-width: 100%;
+    background-color: #0000005e;
 }
 .cuer .texgr{
-    padding-top: 70px;
-    background: rgba(255, 255, 255, 0);
+    
+    margin-top: 95px;
+    margin-bottom: 15px;
+    margin-left: 30px;
+    background: rgba(0, 0, 0, 0);
 }
 .texgr img{
     width: 100%;
@@ -272,10 +276,10 @@ font-weight: 600;
 }
 .texgr h1{
     color: #e4e4e4;
-    padding: 10px;
+    padding: 0px;
     
     
-    background: #d9d9d900;
+    background: #00000000;
     margin-bottom: 0%;
 }
 .cuer img{
