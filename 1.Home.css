@@ -776,6 +776,8 @@ a{
 .button:active{
     transform: scale(0.98);
 }
+
+.homes3::before,
 .homes::before,
 .home::before{
     content: "";
@@ -789,12 +791,15 @@ a{
     transition: all 0.5s ease-out;
     
 }
+
+.homes3.show::before,
 .homes.show::before,
 .home.show::before{
     opacity: 1;
     pointer-events: auto;
     
 }
+
 .form_container{
     position: fixed;
     max-width: 65%;        
@@ -822,13 +827,15 @@ a{
     width: 1266px;                                     /*tamaño de la caja en hancho*/
     height: 420px;
 }
+.homes3.show .form_container,
 .homes.show .form_container,
 .home.show .form_container{                           
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%)scale(1);
 }
-.signup_form{
+
+.signup_form, .signup_form3{
     display: none;
     padding: 32px;                                       /**/
     width: 1266px;
@@ -843,12 +850,26 @@ a{
     
     
 }
+.form .signup_form3 img{
+    position: absolute;
+    max-width: 100%;        
+    max-height: 100%;  
+    
+    
+    
+}
 .form_container.active .signup_form{
     display: block;
 }
 .form_container.active .login_form{
     display: none;
 }
+.form_container.active .signup_form3{
+    display: block;
+}
+
+
+.form_closed3,
 .form_closed,
 .form_close{
     
@@ -968,3 +989,28 @@ a{
     text-align: center;
     margin-top: 15px;
 } 
+
+.centradero{
+     align-items: center;
+    justify-items: center;
+}
+
+.formes{
+   
+    display: flex;
+    background-color: #ffffff;
+    width: 1000px;
+    
+}
+
+
+.formes img{
+    width: 50%;
+}
+
+
+.centrarlog{
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
